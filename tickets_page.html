@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="tickets_1.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet"/>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="tickets_2.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+    .bottom_ul a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 15px;
+    }
+    
+    #bottom_logo {
+        max-width: 100px;
+        height: auto;
+        /* margin: 20px 0; */
+    }
+    #footer-social a {
+        margin: 0 10px;
+    }
+
+    @media (max-width: 798px) {
+        .bottom_ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #bottom_logo {
+            max-width: 80px;
+        }
+        html{
+            position: absolute;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        .ticket-div{
+            display: block;
+        }
+        html{
+            position: absolute;
+        }
+        #footer-social{
+            margin-right: 20%;
+        }
+        #bottom_logo{
+            margin-right: 20%;
+        }
+        #bottom{
+            position: absolute;
+        }
+        #footer-description{
+            margin-right: 20%;
+            margin-left: 20%;
+            padding-left: 20%;
+        }
+        
+    }
+    @media screen and (max-width: 250px) {
+        .ticket-div{
+            display: block;
+        }
+        html{
+            position: absolute;
+        }
+        #footer-social{
+            margin-right: 20%;
+        }
+        #bottom_logo{
+            margin-right: 20%;
+        }
+        #bottom{
+            position: absolute;
+        }
+        #footer-description{
+            margin-right: 20%;
+            margin-left: 20%;
+            padding-left: 20%;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .ticket-div{
+            display: block;
+        }
+        html{
+            position: absolute;
+        }
+        #footer-social{
+            margin-right: 20%;
+        }
+        #bottom_logo{
+            margin-right: 20%;
+        }
+        #bottom{
+            position: absolute;
+        }
+        #footer-description{
+            margin-right: 20%;
+            margin-left: 20%;
+            padding-left: 20%;
+        }
+    }
+    @media screen and (max-width: 290px) {
+        html{
+            position: absolute;
+        }
+    }
+    /* ,bbbk */
+    @media (max-width:700px) {
+    #contact_us_now{
+        /* margin-left: 8%; */
+        display:block;
+        /* margin-right: 8%; */
+    } 
+    html{
+            position: absolute;
+        }  
+}
+@media screen and (max-width: 1024px) {
+    #contact {
+      font-size: 40px;
+      margin-left: 30%;
+    }
+    li.nav_right {
+      padding: 12px;
+    }
+}
+
+  @media screen and (max-width: 768px) {
+    #contact {
+      font-size: 30px;
+      margin-left: 20%;
+    }
+    li.nav_right {
+      padding: 8px;
+    }
+    html{
+            position: absolute;
+        }
+  }
+
+  @media screen and (max-width: 480px) {
+    #contact {
+      font-size: 20px;
+      margin-left: 10%;
+    }
+    li.nav_right {
+      padding: 5px;
+    }
+    html{
+            position: absolute;
+        }
+  }
+  @media screen and (max-width:190px){
+    img{
+        max-width: 100px;
+    }
+    html{
+            position: absolute;
+        }
+    
+  }
+    </style>
+        
+</head>
+
+<body>
+    <div id="bg-main">
+        <ul class="nav_ul">
+            <a href="login.html"><li class="nav_right">Login</li></a>
+            <a href="tickets_page.html"><li class="nav_right">Tickets</li></a>
+            <a href="team.html"><li class="nav_right">About Us</li></a>
+            <a href="contact.html" ><li class="nav_right">  Contact</li></a>
+            <a href="index.html"><li class="nav_right">Home</li></a>
+            <img src="logo.png" alt="logo"></li>
+        </ul>
+        <div id="buy-ticket">
+            Tickets
+        </div><pre>
+            
+        </pre>
+    </div>
+    <div id="Ticket-sale">
+        <div id="join-us">
+            Join us for the full conference
+        </div>
+        <div id="Sale-live">
+            Tickets on Sale Now!
+        </div>
+    </div>
+    <div id="ticket-bg">
+        <div class="ticket-div">
+            <div class="earlybird-div">
+                <div class="eb-head">
+                <h2 style="font-size:large;font-weight: 500;color: #ff0763;">Early Bird</h2>
+                <h2>
+                    <span class="currency">$</span>
+                    <strong style="font-size:130%;">219</strong>
+                    <small style="font-size: medium;">/Person</small>
+                </h2>
+                </div>
+                <ul style="padding-left: 5%;">
+                    <li class="check">Get Access to all Sessions</li>
+                    <li class="check">Unlimited Coffee and Foods</li>
+                    <li class="un-check">Meet with Great Singers</li>
+                    <li class="un-check">Access to all Audio and Video Files</li>
+                </ul>
+                <div class="join-now-div">
+                    <a href="#booking-going-on" class="join-now">Join Now</a>
+                </div>
+                <br><br>
+            </div>
+            <div class="regular-div"> 
+                <div class="eb-head">
+                    <h2 style="font-size:large;font-weight: 500;">Regular</h2>
+                    <h2>
+                        <span class="currency">$</span>
+                        <strong style="font-size:130%;">319</strong>
+                        <small style="font-size: medium;">/Person</small>
+                    </h2>
+                    </div>
+                    <ul style="padding-left: 5%;">
+                        <li class="check">Get Access to all Sessions</li>
+                        <li class="check">Unlimited Coffee and Foods</li>
+                        <li class="check">Meet with Great Singers</li>
+                        <li class="un-check">Access to all Audio and Video Files</li>
+                    </ul>
+                    <div class="join-now-div">
+                        <a href="#booking-going-on" class="join-now">Join Now</a>
+                    </div>
+                <br><br>
+            </div>
+            <div class="lastchance-div">
+                <div class="eb-head">
+                    <h2 style="font-size:large;font-weight: 500;color: #ff0763;">Last Chance</h2>
+                    <h2>
+                        <span class="currency">$</span>
+                        <strong style="font-size:130%;">379</strong>
+                        <small style="font-size: medium;">/Person</small>
+                    </h2>
+                    </div>
+                    <ul style="padding-left: 5%;">
+                        <li class="check">Get Access to all Sessions</li>
+                        <li class="check">Unlimited Coffee and Foods</li>
+                        <li class="check">Meet with Great Singers</li>
+                        <li class="check">Access to all Audio and Video Files</li>
+                    </ul>
+                    <div class="join-now-div">
+                        <a href="#booking-going-on" class="join-now">Join Now</a>
+                    </div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <pre>
+
+
+
+    </pre>
+    <div class="booking-form">
+        <div id="booking-going-on">
+            <h3>Join us</h3>
+            <div class="input-group">
+                <label for="">First Name</label>
+                <input id="flying-from-input" class="inp-style" type="text" name="" placeholder="First Name">
+            </div>
+            <div class="input-group">
+                <label for="">Last Name</label>
+                <input id="flying-to-input" class="inp-style" type="text" name="" placeholder="Last Name">
+            </div>
+            <div class="inputs">
+                </div>
+                    <div class="input-group f-class">
+                        <div>
+                            <label for="">Early Bird ($219)</label>
+                            <input id="Early-Bird-count" class="inp-style inp-width" type="number" name="" value="0">
+                        </div>
+                        <div class="plus-minus-btn">
+                            <button
+                            onclick="handleTicketChange('Early-Bird', false)"
+                            class="btn btn-default"
+                            >
+                            <i class="fas fa-minus"></i>
+                            </button>
+                            <button
+                            onclick="handleTicketChange('Early-Bird', true)"
+                            class="btn btn-default"
+                            >
+                            <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="input-group f-class">
+                        <div>
+                            <label for="">Regular ($319)</label>
+                            <input id="Regular-count"   class="inp-style inp-width"   type="number" name="" value="0">
+                        </div>
+                        <div class="plus-minus-btn">
+                            <button
+                            onclick="handleTicketChange('Regular', false)"
+                            class="btn btn-default"
+                            >
+                            <i class="fas fa-minus"></i>
+                            </button>
+                            <button
+                            onclick="handleTicketChange('Regular', true)"
+                            class="btn btn-default"
+                            >
+                            <i class="fas fa-plus"></i>
+                            </button>
+    
+                        </div>
+                    </div>
+                    <div class="input-group f-class">
+                        <div>
+                            <label for="">Last-Chance($379)</label>
+                            <input id="Last-Chance-count" class="inp-style inp-width" type="number" name="" value="0">
+                        </div>
+                        <div class="plus-minus-btn">
+                            <button
+                            onclick="handleTicketChange('Last-Chance', false)"
+                            class="btn btn-default"
+                            >
+                            <i class="fas fa-minus"></i>
+                            </button>
+                            <button
+                            onclick="handleTicketChange('Last-Chance', true)"
+                            class="btn btn-default"
+                            >
+                            <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="calculations">
+                        <div class="amount">
+                            <div class="left">
+                                <p>Subtotal</p>
+                            </div>
+                            <div class="right">
+                                <p id="sub-total">$0</p>
+                            </div>
+                        </div>
+                        <div class="amount">
+                            <div class="left">
+                                <p>Charge 10% VAT</p>
+                            </div>
+                            <div class="right">
+                                <p id="tax-amount">$0</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <div class="left">
+                                <h4>Total</h4>
+                            </div>
+                            <div class="right">
+                                <p id="total">$0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="check()" id="book-now" class="btn-style">
+                        Book Now
+                    </button>
+                </div>
+                <div style="padding: 2em 0; margin: 10em 2em;" id="booking-successful">
+                    <h3 style="text-align: center;">Thank you so much!</h3>
+                    <h5 style="text-align: center; color: #e33741;">You have successfully completed your booking.</h5>
+                    <hr>
+
+                    <p>You have booked <span id="Early-Bird-count-final-view"></span> Early Bird ticket(s)</p>
+                    <p>You have booked <span id="Regular-count-final-view"></span> Regular ticket(s)</p>
+                    <p>You have booked <span id="Last-Chance-final-view"></span> Early Bird ticket(s)</p>
+                    <hr>
+                    <p>Your total cost is <span id="total-final-view"></span> </p><br><br>
+                    <button id="Download_tickets" ><a href="tickets_out.html" style="color: black;">Download tickets</a></button>
+                    <div>
+            </div>   
+    </main>
+    <script>
+        function handleTicketChange(ticket, isIncrease) {
+          const ticketInput = document.getElementById(ticket + "-count");
+          const ticketCount = getInputValueTicket(ticket);
+          let ticketNewCount = ticketCount;
+          if (isIncrease == true) {
+            ticketNewCount = ticketCount + 1;
+          }
+          if (isIncrease == false && ticketCount > 0) {
+            ticketNewCount = ticketCount - 1;
+          }
+          ticketInput.value = ticketNewCount;
+          let ticketTotal = 0;
+          if (ticket == "Early-Bird") {
+            ticketTotal = ticketNewCount * 1219;
+          }
+          if (ticket == "Last-Chance") {
+            ticketTotal = ticketNewCount * 371;
+          }
+          if (ticket == "Regular") {
+            ticketTotal = ticketNewCount * 59;
+          }
+          calculateTotal();
+        }
+
+        function calculateTotal() {
+          const firstClassCount = getInputValueTicket("Early-Bird");
+          const RegularCount = getInputValueTicket("Regular");
+          const LastChancecount = getInputValueTicket("Last-Chance");
+          const totalPrice = firstClassCount * 219 + RegularCount * 319+ LastChancecount*379;
+          document.getElementById("sub-total").innerText = "$" + totalPrice;
+          const tax = Math.round(totalPrice * 0.1);
+          document.getElementById("tax-amount").innerText = "$" + tax;
+          const grandTotal = totalPrice + tax;
+          document.getElementById("total").innerText = "$" + grandTotal;
+        }
+        function getInputValueTicket(ticket) {
+          const ticketInput = document.getElementById(ticket + "-count");
+          const ticketCount = parseInt(ticketInput.value);
+          return ticketCount;
+        }
+        document.getElementById("book-now").addEventListener("click", function(){
+            document.getElementById("booking-going-on").style.display = "none";
+            document.getElementById("booking-successful").style.display = "block";
+            let Early_count=document.getElementById("Early-Bird-count").value;
+            let Last_count=document.getElementById("Last-Chance-count").value;
+            let Regular_count=document.getElementById("Regular-count").value;
+            let tot=document.getElementById("total").innerText;
+            document.getElementById("Early-Bird-count-final-view").innerHTML=Early_count;
+            document.getElementById("Regular-count-final-view").innerHTML=Regular_count;
+            document.getElementById("Last-Chance-final-view").innerHTML=Last_count;
+            document.getElementById("total-final-view").innerHTML=tot;
+        });
+    </script>
+    </div>
+    </div>
+    <div style="margin-top: 800px;">
+    <br><br><br>
+    <div id="bottom">
+        <ul class="bottom_ul">
+            <a href="contact.html"><li class="nav_center">Contact</li></a>
+            <a href="tickets_page.html"><li class="nav_center">Tickets</li></a>
+            <a href="team.html"><li class="nav_center">About Us</li></a>
+            <a href="index.html"><li class="nav_center">Home</li></a>
+        </ul>
+        <img src="logo.png" alt="logo" id="bottom_logo">
+        <div id="footer-social">
+                <a href="https://www.facebook.com/" ><i id="footer-list" style="color: #677fb5;" class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/login" ><i id="footer-list" style="color: #70c2e9;" class="fa fa-twitter"></i></a>
+                <a href="https://myaccount.google.com/" ><i id="footer-list" style="color: #c53942;" class="fa fa-google-plus"></i></a>
+                <a href="https://www.linkedin.com/feed/" ><i id="footer-list" style="color: #3daccf;" class="fa fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/" ><i id="footer-list" style="color: #bb0000;" class="fa fa-youtube"></i></a>
+                <a href="https://www.instagram.com/?hl=en" ><i id="footer-list" style="color: #125688;" class="fa fa-instagram"></i></a>
+        </div><br><br>
+        <p id="footer-description">Copyright &copy; 2022 Extravanza .All rights Reserved</p><br><br>
+    </div>
+    </div>
+    <script>
+    function check(){
+        var x=document.getElementById("flying-from-input").value
+        var y=document.getElementById("flying-to-input").value
+        if(x==""){
+            alert('Please Enter first Name');
+        }
+        else if (y == "") { 
+            alert('Please Enter last Name');
+         } 
+        
+
+
+    }
+    </script>
+</body>
+</html>

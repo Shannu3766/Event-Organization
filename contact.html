@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    
+    </style>
+</head>
+<body>
+    <div id="bg-main">
+        <ul class="nav_ul">
+            <a href="login.html"><li class="nav_right">Login</li></a>
+            <a href="team.html"><li class="nav_right">About Us</li></a>
+            <a href="tickets_page.html"><li class="nav_right">Tickets</li></a>
+            <a href="contact.html"><li class="nav_right">  Contact</li></a>
+            <a href="index.html"><li class="nav_right">Home</li></a>
+            <img src="logo.png" alt="logo"></li>
+        </ul>
+        <div id="contact">
+            Contact
+        </div>
+        <pre>
+        </pre>
+    </div>
+    <div id="maps">
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=800&amp;height=600&amp;hl=en&amp;q=Olympic Way, Wembley, London, Greater London HA9 0WS&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    
+                </iframe>
+            </div>
+            <style>
+            .mapouter{
+                position:relative;
+                text-align:right;
+                width:100%;
+                height:600px;
+            }.gmap_canvas 
+            {
+                overflow:hidden;
+                background:none!important;
+                width:100%;height:600px;
+            }.gmap_iframe 
+            
+            {
+                height:600px!important;
+            }
+            </style>
+            </div>
+    </div>
+    <div id="contact_us_now">
+        <div id="contact_us">
+            <span style="font-size: 24px;color: black;font-family: sans-serif;">Contact Us</span>
+            <p id="contact_us_p">This year Eventor is happening at the brand new Jurys Inn Brighton Waterfront Hotel, Brighton, London.
+                One of the UK's iconic and beautiful location.
+                You will join over 300 attendies in one of the best Conference Venue in Europe.
+            </p>
+            <div class="address-box">
+                <i class="fa fa-map-marker">
+                    &nbsp;
+                </i>
+                <div class="address">
+                <h4 style="font-weight: 500;">Address:</h4>
+                <p>Olympic Way, Wembley, London, Greater London HA9 0WS</p>
+                </div>
+            </div>
+            <div class="Email-box">
+                <i class="fa fa-email-marker">
+                    &nbsp;
+                </i>
+                <div class="Email">
+                <h4 style="font-weight: 500;">Email:</h4>
+                <p>Customerservices@ovoarena.co.uk</p>
+                </div>
+            </div>
+            <div class="Phone-box">
+                <i class="fa fa-phone-marker">
+                    &nbsp;
+                </i>
+                <div class="phone">
+                <h4 style="font-weight: 500;">Phone:</h4>
+                <p>+44 800 169 2007</p>
+                </div>
+            </div>
+        </div>
+        <div id="contact_now">
+            <span style="font-size: 24px;color: black;font-family: sans-serif;">Contact Now</span>
+            <br><br>
+            <form>
+                <input type="text" placeholder="Name" id="name_input" size="60"><br><br>
+                <input type="email" placeholder="Email" id="email_input" size="60"><br><br>
+                <input type="text" placeholder="Subject" id="text_input" size="60"><br><br>
+                <textarea name="Message" id="msg_input" cols="60" rows="6" placeholder="Message"></textarea>
+            </form>
+            <div id="space">
+                <p class="banner-btn">
+                    <button onclick="check()" class="btn btn-primary">Register Now</button>
+                </p>
+            </div>
+        </div>
+        </div>
+    <div id="bottom">
+        <ul class="bottom_ul">
+            <a href="contact.html"><li class="nav_center">Contact</li></a>
+            <a href="tickets_page.html"><li class="nav_center">Tickets</li></a>
+            <a href="team.html"><li class="nav_center">About Us</li></a>
+            <a href="index.html"><li class="nav_center">Home</li></a>
+        </ul>
+        <img src="logo.png" alt="logo" id="bottom_logo">
+        <div id="footer-social">
+                <a href="https://www.facebook.com/" ><i id="footer-list" style="color: #677fb5;" class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/login" ><i id="footer-list" style="color: #70c2e9;" class="fa fa-twitter"></i></a>
+                <a href="https://myaccount.google.com/" ><i id="footer-list" style="color: #c53942;" class="fa fa-google-plus"></i></a>
+                <a href="https://www.linkedin.com/feed/" ><i id="footer-list" style="color: #3daccf;" class="fa fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/" ><i id="footer-list" style="color: #bb0000;" class="fa fa-youtube"></i></a>
+                <a href="https://www.instagram.com/?hl=en" ><i id="footer-list" style="color: #125688;" class="fa fa-instagram"></i></a>
+        </div><br><br>
+        <p id="footer-description">Copyright &copy; 2022 Extravanza .All rights Reserved</p><br><br>
+    </div>
+    <script>
+        function check(){
+            var x=document.getElementById("name_input").value
+            var y=document.getElementById("email_input").value
+            var z=document.getElementById("text_input").value
+            if(x==""){
+                alert('Please Enter Name');
+            }
+            else if (y == "") { 
+                alert('Please enter Email');
+             } 
+             else if (z == "") {
+                alert('Please enter Subject');
+            }
+            else{
+                alert("successfuly registered");
+            }
+
+
+        }
+
+
+    </script>   
+</body>
+</html>

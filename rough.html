@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Multiply by 5</title>
+ <style>
+ button{ 
+ background-color: black; 
+ border-radius: 2px; 
+ padding: 10px 30px 10px 30px; 
+ color: white; 
+ font-size: 15px; 
+ } 
+ #output{ 
+ /* color:greenyellow; */
+ /* background-color: red; */
+ /* margin-right: 80%; */
+ /* padding:10px 0px 10px 12px; */
+ padding-left: 16%; 
+ padding-right: 16%; 
+ } 
+ #bodycolor{ 
+ background-color:white; 
+ color:black; 
+ } 
+ body{ 
+ text-align: center; 
+ } 
+ </style>
+</head>
+<body id="bodycolor">
+ <!-- Question 1 -->
+ <h2>Question 1</h2>
+ <label for="Sqrt">Enter a number:</label>
+ <input type="number" id="Sqrt" />
+ <p id="result"></p>
+ <button onclick="Question1()">Square root</button>
+ <!-- Question 2 -->
+ <h2>Question 2</h2>
+ <p>Click the button below to generate a random number </p>
+ <p id="output"></p>
+ <button onclick="Question2()">Click me</button>
+ <!-- Question 3 -->
+ <h2>Question 3</h2>
+ <p>Click the below button to get Date !!</p>
+ <p id="dates"></p>
+ <button onclick="Question3()">Date</button>
+ <!-- Question 4 -->
+ <h2>Question 4</h2>
+ <p>Click the Below Button to get the number of days for the new year</p>
+ <p id="year"></p>
+ <button onclick="Question4()">New Year</button><br>
+ <!-- Question 5 -->
+ <h2>Question5</h2>
+ <label for="indexes">Enter the String ::</label>
+ <input type="text" id="indexes" value="Please locate where 'locate' 
+occurs!"><br><br>
+ <label for="indent">Enter the String to find the index : </label>
+ <input type="text" id="indent" value="locate"><br>
+ <button onclick="Question5()" style="margin-top: 2%;">Get Index</button>
+ <p id="locate"></p>
+ <!-- Question 6 -->
+ <h2>Question 6</h2>
+ <label for="cap">Enter the text to capitalize : </label>
+ <input type="text" id="cap" value="parthiv"><br>
+ <button onclick="Question6()" style="margin-top: 2%;">Click me to 
+Capitiize</button>
+ <p id="capt"></p>
+ <!-- Question 7 -->
+ <h2>Question7</h2>
+ <p>Click the button to get the navigatior objects</p>
+ <button onclick="Question7()">Navigator</button>
+ <p id="navigator" style="margin-left: 40px;"></p>
+ <!-- Question 8: -->
+ <h2>Question 8</h2>
+ <button id="backBtn" onclick="back()">Backward</button>
+ <button id="forwardBtn" onclick="front()">Forward</button>
+ <button id="printHistoryBtn">Print History</button>
+ <div id="historyLog" style="margin-top: 12px;font-size: 19px;"></div>
+ <!-- Question 9 -->
+ <h2 style="text-align: center;">Question 9</h2>
+ <img ID="imgs" src="img1.jpg" alt="img" style="height: 400px;margin-left: 
+5%;"><br>
+ <button id="img_button" onclick="Question9()" style="margin-left: 5%;margin-top: 2%;">Change the image</button>
+ <!-- Question-10 -->
+ <h2>Question 10</h2>
+ <input type="checkbox" id="red" onclick="if(this.checked){red()}"><label
+for="red">Red</label><br>
+ <input type="checkbox" id="Blue" onclick="if(this.checked){Blue()}"><label
+for="Blue">Blue</label><br>
+ <input type="checkbox" id="Green" onclick="if(this.checked){Green()}"><label
+for="Green">Green</label><br>
+ <pre>
+ 
+ </pre>
+ <script>
+ function Question1(){ 
+ num = document.getElementById("Sqrt").value; 
+ num2=Math.sqrt(num); 
+ document.getElementById("result").innerHTML = `The Squre root of 
+${num} is ${num2}`; 
+ } 
+ function Question2(){ 
+ num1=Math.floor(Math.random()*10); 
+ document.getElementById("output").innerHTML=`The random Number 
+Generated is: ${num1}`; 
+ } 
+ function Question3(){ 
+ today=new Date(); 
+ monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 
+'July', 'August', 'September', 'October', 'November', 'December']; 
+ Date_time=`Date is: ${today.getDate()}
+${monthNames[today.getMonth()]} Time is :${today.getHours()} Hours 
+${today.getMinutes()} minutes ${today.getSeconds()}seconds;`
+ document.getElementById("dates").innerHTML=Date_time; 
+ } 
+ function Question4(){ 
+ const today = new Date(); 
+ const currentYear = today.getFullYear(); 
+ const nextNewYear = new Date(`January 1, ${currentYear + 1}`); 
+ const millisecondsInDay = 24 * 60 * 60 * 1000; 
+ const daysLeft = Math.ceil((nextNewYear - today) / millisecondsInDay); 
+ document.getElementById("year").innerHTML=`The number of days left for 
+new year is ${daysLeft}`; 
+ } 
+ function Question5(){ 
+ str=document.getElementById("indexes").value; 
+ ind=document.getElementById("indent").value; 
+ inde=str.indexOf(ind); 
+ document.getElementById("locate").innerHTML=`The index of ${ind} is 
+${inde}`; 
+ } 
+ function Question6(){ 
+ str=document.getElementById("cap").value; 
+ ind=str[0].toUpperCase()+str.slice(1); 
+ document.getElementById("capt").innerHTML=`capitalized the first letter 
+::${ind}`; 
+ } 
+ function Question7(){ 
+ document.getElementById("navigator").innerHTML=`
+ <br/>navigator.appCodeName :${navigator.appCodeName}
+ <br/>navigator.appName :${navigator.appName}
+ <br/>navigator.appVersion :${navigator.appVersion}
+ <br/>navigator.cookieEnabled :${navigator.cookieEnabled}
+ <br/>navigator.language :${navigator.language}
+ <br/>navigator.userAgent :${navigator.userAgent}
+ <br/>navigator.platform :${navigator.platform}
+ <br/>navigator.onLine :${navigator.onLine}`; 
+ } 
+ function Question9(){ 
+ const myImage = document.getElementById('imgs'); 
+ const changeButton = document.getElementById('img_button'); 
+ changeButton.addEventListener('click', () => { 
+ myImage.src = 'img2.jpg'; 
+ }); 
+ } 
+ function red(){ 
+ document.getElementById("bodycolor").style.backgroundColor="rgb(255, 111, 97)"; 
+ } 
+ function Blue(){ 
+ document.getElementById("bodycolor").style.backgroundColor="rgb(52, 86, 139)"; 
+ } 
+ function Green(){ 
+ document.getElementById("bodycolor").style.backgroundColor="rgb(136, 176, 75)"; 
+ } 
+ curre=0; 
+ let customHistory = 
+["https://www.youtube.com/","https://www.google.com/","https://chat.openai.com/"]; 
+ function back(){ 
+ document.getElementById("historyLog").innerHTML=customHistory[curre%3]; 
+ curre--; 
+ } 
+ function front(){ 
+ document.getElementById("historyLog").innerHTML=customHistory[curre%3]; 
+ curre++; 
+ } 
+ </script>
+</body>
+</html>
